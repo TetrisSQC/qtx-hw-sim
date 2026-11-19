@@ -1,0 +1,19 @@
+# Copies of src/*.pas that tools/build.py puts into the Quartex projects, and the build output
+# (index.js also carries every embedded ROM, the private ones included)
+hwsim_web/hwsim.*.pas
+hwsim_web/index.js
+hwsim_headless/hwsim.*.pas
+hwsim_headless/index.js
+
+# ROMs that may not be published (Apple II+): the filled unit and the files it was made from.
+# src/hwsim.roms_local.pas (the empty stub) is checked in.
+src/local/
+data/apple2roms/
+
+# test binaries and output
+tests/*.exe
+tests/out/
+
+# local tool state
+tools/__pycache__/
+tools/qx.session

@@ -1,0 +1,138 @@
+# LC-80 (Lerncomputer G-5403.500, boards 15403.500-1901 and -1902 keyboard), captured by hand
+# from lc80/schaltplan_lc80.jpg (scan since deleted). Only fitted parts ("n.b." = not fitted: ROM3-5, RAM2-4 left out;
+# their selects /ROM3../RAM4 stay on the decoders). Power supply, tape amplifier and the bus
+# connectors X1/X2 are not captured; the tape input is the B861's pull-up R283.
+#
+# Format:  REF  TYPE  X  Y  pin=NET ...      (X Y in mm on a synthesized board)
+#
+# Readings that are interpretations, not plain lines on the scan:
+# - the bus wires are numbered per bus: address 0-15 = A0-A15, data 0-7 = D0-D7, the control bus
+#   0-7 = /M1 /IORQ /RD /WR /MREQ /RFSH /HALT /BUSAK (CPU outputs), 8-14 = /INT /NMI /BUSRQ /WAIT
+#   /RESET CLK CLK2, 15/16 = SEL15/SEL16 (pulled up by R318/R317, switch KSD11 not fitted),
+#   17 = M1P (M1 for PIO/CTC, also low during RESET), 18-26 = chip selects, 27 = +5V,
+#   28/29 = the interrupt daisy chain (CTC -> user PIO -> system PIO)
+# - D209 E2 / D210 E2 "4" = /MREQ (control bus), not A4
+# - I/O selects are linear: system PIO /CE = A3 ($F4-$F7), user PIO /CE = A2 ($F8-$FB),
+#   CTC /CE = A4 ($EC-$EF); B/A = A0, C/D = A1 (CTC CS0/CS1 = A0/A1)
+# - the RC oscillator (D211 13->12 with C348/C248, R272/R321/V218) is driven by the machine on OSC
+
+# CPU
+D201 UD880D 70 60 1=A11 2=A12 3=A13 4=A14 5=A15 6=CLK 7=D4 8=D3 9=D5 10=D6 11=+5V 12=D2 13=D7 14=D0 15=D1 16=/INT 17=/NMI 18=/HALT 19=/MREQ 20=/IORQ 21=/RD 22=/WR 23=/BUSAK 24=/WAIT 25=/BUSRQ 26=/RESET 27=/M1 28=/RFSH 29=GND 30=A0 31=A1 32=A2 33=A3 34=A4 35=A5 36=A6 37=A7 38=A8 39=A9 40=A10
+
+# ROMs (U505D, 1K; pin 19 = A10 for the 2K types)
+D202 U505D 125 40 1=A7 2=A6 3=A5 4=A4 5=A3 6=A2 7=A1 8=A0 9=D0 10=D1 11=D2 12=GND 13=D3 14=D4 15=D5 16=D6 17=D7 18=+5V 19=A10 20=/ROM1 21=+5V 22=A9 23=A8 24=+5V
+D203 U505D 125 75 1=A7 2=A6 3=A5 4=A4 5=A3 6=A2 7=A1 8=A0 9=D0 10=D1 11=D2 12=GND 13=D3 14=D4 15=D5 16=D6 17=D7 18=+5V 19=A10 20=/ROM2 21=+5V 22=A9 23=A8 24=+5V
+
+# RAM (U214D = 2114, 1K x 4): D204 low nibble, D205 high nibble
+D204 U214D 170 40 1=A6 2=A5 3=A4 4=A3 5=A0 6=A1 7=A2 8=/RAM1 9=GND 10=/WR 11=D3 12=D2 13=D1 14=D0 15=A9 16=A8 17=A7 18=+5V
+D205 U214D 170 75 1=A6 2=A5 3=A4 4=A3 5=A0 6=A1 7=A2 8=/RAM1 9=GND 10=/WR 11=D7 12=D6 13=D5 14=D4 15=A9 16=A8 17=A7 18=+5V
+
+# address decoders (DS8205 = 74LS138): D209 ROMs 2K each from $0000, D210 RAMs 1K each from $2000
+D209 DS8205 25 110 1=A11 2=A12 3=SEL16 4=A13 5=/MREQ 6=SEL15 8=GND 9=/ROM3 10=/ROM2 11=/ROM1 14=/ROM5 15=/ROM4 16=+5V
+D210 DS8205 25 140 1=A10 2=A11 3=SEL15 4=GND 5=/MREQ 6=A13 7=/RAM4 8=GND 9=/RAM3 10=/RAM2 11=/RAM1 16=+5V
+
+# PIOs (UD855D = Z80 PIO) and CTC (UD857D)
+D206 UD855D 225 50 1=D2 2=D7 3=D6 4=A3 5=A1 6=A0 7=PA7 8=PA6 9=PA5 10=PA4 11=GND 12=PA3 13=PA2 14=PA1 15=PA0 16=GND 17=GND 19=D0 20=D1 23=/INT 24=IEI_S 25=CLK2 26=+5V 27=TAPEIN 28=TAPEOUT 29=DIG0 30=DIG1 31=DIG2 32=DIG3 33=DIG4 34=DIG5 35=/RD 36=/IORQ 37=M1P 38=D5 39=D4 40=D3
+D207 UD855D 225 100 1=D2 2=D7 3=D6 4=A2 5=A1 6=A0 7=UPA7 8=UPA6 9=UPA5 10=UPA4 11=GND 12=UPA3 13=UPA2 14=UPA1 15=UPA0 16=UASTB 17=UBSTB 18=UARDY 19=D0 20=D1 21=UBRDY 22=IEI_S 23=/INT 24=IEI_U 25=CLK2 26=+5V 27=UPB0 28=UPB1 29=UPB2 30=UPB3 31=KIN0 32=KIN1 33=KIN2 34=KIN3 35=/RD 36=/IORQ 37=M1P 38=D5 39=D4 40=D3
+D208 UD857D 280 50 1=D4 2=D5 3=D6 4=D7 5=GND 6=/RD 7=ZCTO0 8=ZCTO1 9=ZCTO2 10=/IORQ 11=IEI_U 12=/INT 13=+5V 14=M1P 15=CLK2 16=A4 17=/RESET 18=A0 19=A1 20=TRG3 21=TRG2 22=TRG1 23=TRG0 24=+5V 25=D0 26=D1 27=D2 28=D3
+
+# glue: D211 DL014 (7414), D212 DL000 (7400)
+D211 DL014 25 50 3=NMIKEY 4=NMIN 5=RESKEY 6=RESN 7=GND 8=CLK2 9=OSC2 10=CLK 11=OSC2 12=OSC2 13=OSC 14=+5V
+D212 DL000 25 80 1=/M1 2=/RESET 3=M1N 4=M1N 5=M1N 6=M1PX 7=GND 8=/RESET 9=RESN 10=RESN 11=/NMI 12=NMIN 13=NMIN 14=+5V
+
+# resistors (R n=a,b): pull-ups and the ones in signal paths
+R267 10k * * 1=/INT 2=+5V
+R269 10k * * 1=/BUSRQ 2=+5V
+R270 10k * * 1=/WAIT 2=+5V
+R268 10k * * 1=NMIKEY 2=+5V
+R271 10k * * 1=RESKEY 2=+5V
+R275 1k * * 1=M1PX 2=M1P
+R283 1k * * 1=TAPEIN 2=+5V
+R313 10k * * 1=KIN0 2=+5V
+R314 10k * * 1=KIN1 2=+5V
+R315 10k * * 1=KIN2 2=+5V
+R316 10k * * 1=KIN3 2=+5V
+R317 10k * * 1=SEL16 2=+5V
+R318 10k * * 1=SEL15 2=+5V
+R273 560 * * 1=CLK 2=+5V
+R274 560 * * 1=CLK2 2=GND
+R272 68 * * 1=OSC2 2=OSCFB
+R321 500 * * 1=OSC2 2=OSCFB
+R297 3.3k * * 1=PA0 2=PB0
+R298 3.3k * * 1=PA1 2=PB1
+R299 3.3k * * 1=PA2 2=PB2
+R300 3.3k * * 1=PA3 2=PB3
+R301 3.3k * * 1=PA4 2=PB4
+R302 3.3k * * 1=PA5 2=PB5
+R303 3.3k * * 1=PA6 2=PB6
+R304 3.3k * * 1=PA7 2=PB7
+R305 220 * * 1=SC0 2=SEG0
+R306 220 * * 1=SC1 2=SEG1
+R307 220 * * 1=SC2 2=SEG2
+R308 220 * * 1=SC3 2=SEG3
+R309 220 * * 1=SC4 2=SEG4
+R310 220 * * 1=SC5 2=SEG5
+R311 220 * * 1=SC6 2=SEG6
+R312 220 * * 1=SC7 2=SEG7
+R276 330 * * 1=HALTC 2=HALTLED
+
+# capacitors and the oscillator diode (not simulated)
+C242 1u * * 1=NMIKEY 2=GND
+C243 10u * * 1=RESKEY 2=GND
+C348 2.2n * * 1=OSC 2=GND
+C248 2.2n * * 1=OSC 2=GND
+V218 SAY20 * * 1=OSCFB 2=OSC
+
+# segment drivers (SC308d PNP: 1=E on +5V 2=B 3=C), digit drivers (SF116d drawn as PNP emitter followers:
+# 1=C on GND 2=B 3=E on the cathodes, so a low B line selects a digit, as the monitor does), HALT lamp
+V221 SC308d * * 1=+5V 2=PB0 3=SC0
+V222 SC308d * * 1=+5V 2=PB1 3=SC1
+V223 SC308d * * 1=+5V 2=PB2 3=SC2
+V224 SC308d * * 1=+5V 2=PB3 3=SC3
+V225 SC308d * * 1=+5V 2=PB4 3=SC4
+V226 SC308d * * 1=+5V 2=PB5 3=SC5
+V227 SC308d * * 1=+5V 2=PB6 3=SC6
+V228 SC308d * * 1=+5V 2=PB7 3=SC7
+V229 SF116d * * 1=GND 2=DIG0 3=CATH0
+V230 SF116d * * 1=GND 2=DIG1 3=CATH1
+V231 SF116d * * 1=GND 2=DIG2 3=CATH2
+V232 SF116d * * 1=GND 2=DIG3 3=CATH3
+V233 SF116d * * 1=GND 2=DIG4 3=CATH4
+V234 SF116d * * 1=GND 2=DIG5 3=CATH5
+V219 SC308c * * 1=+5V 2=/HALT 3=HALTC
+B235 VQA13 * * 1=HALTLED 2=GND
+
+# displays (3x VQE23, two digits each; segment line n = PIO A bit n: b f a g dp c e d, as the monitor's
+# digit table at $0A07 confirms). B2 (DIG0/CATH0) is the RIGHTMOST digit: the monitor's texts are stored
+# right to left (" LC-80" at $0974 is e7 ef 08 c6 c2 00) and B2 shows the first byte. The scan's bus
+# numbers 8-13 at the cathodes are read accordingly: H324 ("rechts aussen") K2 = CATH0.
+H322 VQE23 90 150 16=SEG2 14=SEG0 1=SEG5 3=SEG7 2=SEG6 15=SEG1 17=SEG3 18=SEG4 11=SEG2 13=SEG0 8=SEG5 6=SEG7 7=SEG6 12=SEG1 10=SEG3 9=SEG4 4=CATH5 5=CATH4
+H323 VQE23 130 150 16=SEG2 14=SEG0 1=SEG5 3=SEG7 2=SEG6 15=SEG1 17=SEG3 18=SEG4 11=SEG2 13=SEG0 8=SEG5 6=SEG7 7=SEG6 12=SEG1 10=SEG3 9=SEG4 4=CATH3 5=CATH2
+H324 VQE23 170 150 16=SEG2 14=SEG0 1=SEG5 3=SEG7 2=SEG6 15=SEG1 17=SEG3 18=SEG4 11=SEG2 13=SEG0 8=SEG5 6=SEG7 7=SEG6 12=SEG1 10=SEG3 9=SEG4 4=CATH1 5=CATH0
+
+# keyboard (board 1902): a key joins a system PIO B line (DIG0..5 = B2..B7) with a user PIO B line
+# (KIN0..3 = B4..B7); RES and NMI pull RESKEY/NMIKEY to GND. Not parts: the machine joins the nets.
+# KEY name sysB userB   (from the "Tastencodierung" table)
+KEY ADR 7 7
+KEY DAT 7 6
+KEY + 4 5
+KEY - 7 4
+KEY C 6 7
+KEY D 6 6
+KEY E 5 5
+KEY F 6 4
+KEY ST 2 6
+KEY 8 5 7
+KEY 9 5 6
+KEY A 6 5
+KEY B 5 4
+KEY LD 2 5
+KEY 4 4 7
+KEY 5 4 6
+KEY 6 7 5
+KEY 7 4 4
+KEY EX 2 7
+KEY 0 3 7
+KEY 1 3 6
+KEY 2 3 5
+KEY 3 3 4

@@ -1,0 +1,98 @@
+Copyright (c) 2026 Salvatore Sanfilippo <antirez@gmail.com>
+
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+
+---
+
+Parts of this repository come from others and keep their own licenses:
+
+- chips/*.h: Andre Weissflog's chips emulators, zlib license (the notice
+  is in each file). chips/m6569.h, m6526.h, m6581.h and z80.h are altered
+  versions, marked as such. chips/codegen: the code generator of z80.h
+  from the same project (zlib license), altered too.
+- chips/c64-roms.h: images of the Commodore 64 ROMs (BASIC, KERNAL,
+  character generator). They belong to their copyright holders and are
+  not covered by this license.
+- chips/zx48-rom.h: the ZX Spectrum 48K ROM, copyright Amstrad plc.
+  Amstrad have kindly given their permission for the redistribution of
+  their copyrighted material but retain that copyright.
+- carts/: Commodore's diagnostic cartridges (Dead Test, Diagnostic
+  586220), which belong to their copyright holders, and the ZX Spectrum
+  diagnostic ROM (LGPL 3). They are not covered by this license, see
+  carts/LICENSE.
+- third_party/sokol: zlib license. third_party/nuklear: MIT or public
+  domain, at your choice (see the end of nuklear.h).
+- src/c64_board_data.c: generated from bwack's C64-250407-Replica-KiCad,
+  licensed under the CERN OHL v1.2.
+- src/zx48_board_data.c: generated from liveboxandy's KiCad files of the
+  ZX Spectrum 48K Issue 3B (CC0 1.0), redrawn from PABB's gerbers.
+- src/ula.c is our own model of the Ferranti ULA, checked against the
+  gate level netlist of the 6C001 recovered from the die by the
+  emu-russia/ula project (CC0), which is not included here: see
+  tools/ulacheck.c.
+
+===========================================================================
+
+THIS REPOSITORY (qtx-hw-sim)
+
+This is an altered version of c64-hw-simulator
+(https://github.com/antirez/c64-hw-simulator, by Salvatore Sanfilippo),
+not the original: the simulator ported to Quartex Pascal, extended with
+the Apple II+ and LC-80 boards and with a fast functional mode. The notice
+above is the license of the original, unchanged; it applies to this
+altered version as well. The additions of the port are:
+
+Copyright (c) 2026 <your name>
+
+and are licensed under the same terms as the notice above.
+
+Parts of this repository come from others and keep their own licenses:
+
+- src/hwsim.m6569.pas, hwsim.m6526.pas, hwsim.m6581.pas: ports of Andre
+  Weissflog's chips emulators (chips/m6569.h, m6526.h, m6581.h, as altered
+  by c64-hw-simulator), zlib license. src/hwsim.m6502.pas and
+  hwsim.z80.pas are generated from chips' m6502.h and z80.h (zlib) by
+  tools/gen_m6502.py and tools/gen_z80.py.
+- src/hwsim.roms.pas holds ROM images that are not covered by this
+  license:
+  - the Commodore 64 ROMs (BASIC, KERNAL, character generator), which
+    belong to their copyright holders;
+  - the ZX Spectrum 48K ROM, copyright Amstrad plc. Amstrad have kindly
+    given their permission for the redistribution of their copyrighted
+    material but retain that copyright;
+  - the cartridges of c64-hw-simulator's carts/ directory: Commodore's
+    C-64 Dead Test and Diagnostic 586220, and the ZX Spectrum diagnostic
+    ROM by Brendan Alford and contributors (LGPL 3). See
+    LICENSES/cartridges.txt (c64-hw-simulator's carts/LICENSE) and
+    LICENSES/zx-diagnostics.LICENSE;
+  - the LC-80 monitor ROMs and the ROMs of the LC-80 variants (2716
+    board, LC-80.2, LC-80e), which belong to their copyright holders.
+- The Apple II+ ROMs are not in this repository: src/hwsim.roms_local.pas
+  is an empty stub, and the Apple II+ runs its own test ROM until the
+  ROMs are embedded locally (see README.md).
+- src/hwsim.bd_c64.pas: generated from bwack's C64-250407-Replica-KiCad,
+  licensed under the CERN OHL v1.2.
+- src/hwsim.bd_zx48.pas: generated from liveboxandy's KiCad files of the
+  ZX Spectrum 48K Issue 3B (CC0 1.0), redrawn from PABB's gerbers.
+- src/hwsim.ula.pas is a port of c64-hw-simulator's model of the Ferranti
+  ULA, checked against the gate level netlist of the 6C001 recovered from
+  the die by the emu-russia/ula project (CC0), which is not included.
+- data/apple2p/ and src/hwsim.bd_apple2p.pas: exported from a KiCad
+  capture of the Apple II schematic of the Apple II Reference Manual
+  (1979); see data/apple2p/README.md.
+- data/lc80/lc80.pins.txt and src/hwsim.bd_lc80.pas: the LC-80 netlist,
+  captured by hand from the schematic of the LC-80 (G-5403.500).

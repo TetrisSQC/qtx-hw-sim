@@ -1,0 +1,170 @@
+A10     74LS194                  1=SOFT5 2=SOFT5 3=Net-(A10-P0) 4=Net-(A10-P1) 5=C14-6 6=A3-2 7=SOFT5 8=GND 9=LD194 10=LD194 11=14M 12=A3-1 13=Net-(A10-Q2) 14=Net-(A10-Q1) 15=Net-(A10-Q0) 16=+5V
+A11     74LS74                   1=A12-13 2=SOFT5 3=SOFT5 4=GND 5=unconnected-(A11A-Q-Pad5) 6=Net-(A11A-~{Q}) 7=GND 8=unconnected-(A11B-~{Q}-Pad8) 9=Net-(A11B-Q) 10=SOFT5 11=14M 12=Net-(A11B-D) 13=SOFT5 14=+5V
+A12     74LS02                   1=Net-(B10B-~{R}) 2=Net-(A12A-~-Pad2) 3=Net-(A15-OUT) 4=Net-(A12B-~-Pad4) 5=Net-(A12B-~-Pad5) 6=Net-(A12B-~-Pad5) 7=GND 8=Net-(B8A-1Q) 9=Net-(B8A-1Q) 10=Net-(A12C-~-Pad10) 11=Net-(A12C-~-Pad10) 12=SS-HI_~{LORES} 13=A12-13 14=+5V
+A15     555                      1=GND 2=Net-(A15-THRES) 3=Net-(A15-OUT) 4=+5V 5=unconnected-(A15-CONT-Pad5) 6=Net-(A15-THRES) 7=unconnected-(A15-DISCH-Pad7) 8=+5V
+A2      74LS00                   1=PHI0 2=Net-(A2A-~-Pad2) 3=~{LDPS} 4=R~{W} 5=Net-(A2B-~-Pad5) 6=~{RAM_SEL} 7=GND 8=SOFT5-A2-8 9=GND 10=GND 11=SOFT5-A2-11 12=GND 13=GND 14=+5V
+A3      74LS166                  1=A3-1 2=A3-2 3=GND 4=Net-(A3-C) 5=Net-(A3-D) 6=7M 7=14M 8=GND 9=SOFT5 10=Net-(A3-E) 11=Net-(A3-F) 12=Net-(A3-G) 13=Net-(A3-Qh) 14=GND 15=~{LDPS} 16=+5V
+A5      2513 Char ROM            1=-12V 2=- 3=- 4=Net-(A3-C) 5=Net-(A3-D) 6=Net-(A3-E) 7=Net-(A3-F) 8=Net-(A3-G) 9=- 10=GND 11=GND 12=-5V 13=- 14=VA 15=VB 16=VC 17=LD0 18=LD1 19=LD2 20=LD3 21=LD4 22=LD5 23=- 24=+5V
+A8      74LS257                  1=Net-(A11A-~{Q}) 2=Net-(A11B-D) 3=A8-3-A9-B9 4=Net-(A8-Za) 5=VC 6=Net-(A8-I1b) 7=Net-(A10-P0) 8=GND 9=Net-(A8-Zd) 10=~{7M} 11=SOFT5 12=Net-(A10-P1) 13=LD7 14=H0 15=GND 16=+5V
+A9      74LS151                  1=Net-(A11B-Q) 2=Net-(A11B-D) 3=Text_Video 4=Text_Video 5=Net-(A9-Z) 6=unconnected-(A9-~{Z}-Pad6) 7=Net-(A10-Q2) 8=GND 9=A12-13 10=Net-(A10-Q0) 11=Net-(A10-Q1) 12=B9-13 13=A8-3-A9-B9 14=Net-(A9-I5) 15=Net-(A11B-D) 16=+5V
+B1      74LS175                  1=SOFT5 2=B1-1Q 3=COLOR_REF 4=Net-(B1-1D) 5=Net-(B1-2D) 6=PHI1 7=PHI0 8=GND 9=14M 10=Net-(B1-2D) 11=unconnected-(B1-~{3Q}-Pad11) 12=Net-(B1-3D) 13=~{7M} 14=~{7M} 15=7M 16=+5V
+B10     74LS74                   1=SOFT5 2=Net-(A9-Z) 3=14M 4=SOFT5 5=VIDEO_DATA 6=unconnected-(B10A-~{Q}-Pad6) 7=GND 8=unconnected-(B10B-~{Q}-Pad8) 9=Net-(B10B-Q) 10=SOFT5 11=Net-(A7-STROBE) 12=SOFT5 13=Net-(B10B-~{R}) 14=+5V
+B11     74LS08                   1=~{DMA} 2=PHI0 3=Net-(U3-Phi0) 4=SS-HI_~{LORES} 5=Net-(B8A-1Q) 6=HIRES 7=GND 8=Net-(B11C-~-Pad8) 9=V3 10=V4 11=Net-(B11D-~-Pad11) 12=LD6 13=Net-(B3-OUT) 14=+5V
+B12     74LS11                   1=Net-(B12A-~-Pad1) 2=H4 3=V2 4=V4 5=SS-Mix_~{NoMix} 6=Net-(B12B-~-Pad6) 7=GND 8=LD194 9=~{7M} 10=PHI0 11=Net-(A2A-~-Pad2) 12=Net-(B12A-~-Pad12) 13=HBL 14=+5V
+B13     74LS02                   1=Net-(B12A-~-Pad1) 2=COLOR_REF 3=H2 4=A3-2 5=Net-(B11D-~-Pad11) 6=LD7 7=GND 8=~{CAS} 9=AX 10=Net-(A2A-~-Pad2) 11=Net-(B12B-~-Pad6) 12=SS-GR_~{TXT} 13=Net-(B5A-1D) 14=+5V
+B14     74LS02                   1=Net-(B14A-~-Pad1) 2=Net-(JP12-B) 3=Net-(B14A-~-Pad3) 4=Net-(B14A-~-Pad3) 5=H4 6=H5 7=GND 8=VC 9=V0 10=Net-(A12B-~-Pad5) 11=Net-(JP10-B) 12=Net-(A12B-~-Pad4) 13=Net-(B14D-~-Pad13) 14=+5V
+B2      74LS86                   1=7M 2=B1-1Q 3=Net-(B1-1D) 4=SOFT5 5=Net-(D13-Q2) 6=Net-(B2B-~-Pad6) 7=GND 8=14M 9=GND 10=Net-(Q2-C) 11=Text_Video 12=A3-1 13=Net-(A3-Qh) 14=+5V
+B3      555                      1=GND 2=Net-(B3-THRES) 3=Net-(B3-OUT) 4=+5V 5=- 6=Net-(B3-THRES) 7=Net-(B3-DISCH) 8=+5V
+B4      74LS194                  1=SOFT5 2=SOFT5 3=LD0 4=LD1 5=LD2 6=LD3 7=Net-(A8-Za) 8=GND 9=LD194 10=Net-(A8-Zd) 11=14M 12=unconnected-(B4-Q3-Pad12) 13=Net-(A9-I5) 14=unconnected-(B4-Q1-Pad14) 15=Net-(A11B-D) 16=+5V
+B5      74LS174                  1=SOFT5 2=Net-(A8-I1b) 3=Net-(B5A-1D) 4=RDO2 5=LD2 6=RDO3 7=LD3 8=GND 9=~{RAS} 10=LD0 11=RDO0 12=LD1 13=RDO1 14=unconnected-(B50-D5-Pad14) 15=unconnected-(B50-Q5-Pad15) 16=+5V
+B6      74LS257                  1=~{KBD} 2=KBD_Data2 3=LD2 4=D2 5=KBD_Data3 6=LD3 7=D3 8=GND 9=D0 10=LD0 11=KBD_Data0 12=D1 13=LD1 14=KBD_Data1 15=~{RAM_SEL} 16=+5V
+B7      74LS257                  1=~{KBD} 2=KBD_Data6 3=LD6 4=D6 5=Net-(B10B-Q) 6=LD7 7=D7 8=GND 9=D4 10=LD4 11=KBD_Data4 12=D5 13=LD5 14=KBD_Data5 15=~{RAM_SEL} 16=+5V
+B8      74LS174                  1=SOFT5 2=Net-(B8A-1Q) 3=Net-(B8A-1D) 4=RDO6 5=LD6 6=RDO7 7=LD7 8=GND 9=~{RAS} 10=LD4 11=RDO4 12=LD5 13=RDO5 14=Net-(A8-I1b) 15=Net-(B8A-1D) 16=+5V
+B9      74LS194                  1=SOFT5 2=SOFT5 3=LD4 4=LD5 5=LD6 6=LD7 7=A8-3-A9-B9 8=GND 9=LD194 10=Net-(A8-Zd) 11=14M 12=unconnected-(B9-Q3-Pad12) 13=B9-13 14=unconnected-(B9-Q1-Pad14) 15=A8-3-A9-B9 16=+5V
+C1      74LS153                  1=GND 2=PHI0 3=A12 4=A13 5=C1-5 6=C1-6 7=MemSelE1 8=GND 9=Net-(B1-3D) 10=Net-(B1-2D) 11=Net-(C1-I1b) 12=Net-(B1-2D) 13=Q3 14=AX 15=GND 16=+5V
+C10     4116                     1=-5V 2=D7 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=CRA6 14=RDO7 15=~{CCAS} 16=GND
+C11     74LS04                   1=SS-PG2_~{PG1} 2=Net-(C12-I0a) 3=~{CLR_STB} 4=Net-(A12A-~-Pad2) 5=H5 6=Net-(E14-A4) 7=GND 8=Net-(D11-~{PE}) 9=Net-(D11-TC) 10=Net-(JP12-A) 11=V2 12=Net-(H3-DIS1) 13=~{DMA} 14=+5V
+C12     74LS257                  1=HIRES 2=Net-(C12-I0a) 3=VA 4=Net-(C12-Za) 5=SS-PG2_~{PG1} 6=VB 7=Net-(C12-Zb) 8=GND 9=C1-6 10=Net-(C12-I0a) 11=GND 12=C1-5 13=VC 14=HBL 15=GND 16=+5V
+C13     74LS51                   1=Net-(B14A-~-Pad1) 2=H4 3=H3 4=H5 5=H5 6=HBL 7=GND 8=SYNC 9=HBL 10=H3 11=H2 12=Net-(B14D-~-Pad13) 13=Net-(B11C-~-Pad8) 14=+5V
+C14     74LS32                   1=A13 2=Net-(C14A-~-Pad2) 3=Net-(E2B-E) 4=Net-(B11C-~-Pad8) 5=HBL 6=C14-6 7=GND 8=Net-(H10-Driver_Ena) 9=R~{W} 10=Net-(U3-Phi1) 11=RRW 12=PHI1 13=R~{W} 14=+5V
+C15     0.1uf                    1=GND 2=Net-(B3-THRES)
+C2      74LS195                  1=SOFT5 2=GND 3=GND 4=AX 5=Net-(C2-P1) 6=AX 7=~{RAS} 8=GND 9=Q3 10=14M 11=Net-(C1-I1b) 12=Q3 13=~{CAS} 14=AX 15=~{RAS} 16=+5V
+C3      4116                     1=-5V 2=D0 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=CRA6 14=RDO0 15=~{CCAS} 16=GND
+C4      4116                     1=-5V 2=D1 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=CRA6 14=RDO1 15=~{CCAS} 16=GND
+C5      4116                     1=-5V 2=D2 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=CRA6 14=RDO2 15=~{CCAS} 16=GND
+C6      4116                     1=-5V 2=D3 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=CRA6 14=RDO3 15=~{CCAS} 16=GND
+C7      4116                     1=-5V 2=D4 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=CRA6 14=RDO4 15=~{CCAS} 16=GND
+C8      4116                     1=-5V 2=D5 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=CRA6 14=RDO5 15=~{CCAS} 16=GND
+C9      4116                     1=-5V 2=D6 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=CRA6 14=RDO6 15=~{CCAS} 16=GND
+D1      Memory Type Sel          1=Net-(E2A-O0) 2=Net-(E2A-O1) 3=Net-(E2A-O2) 4=Net-(E2A-O3) 5=Net-(E2B-O0) 6=Net-(E2B-O1) 7=Net-(E2B-O2) 8=Net-(F2B-O2) 9=Net-(F2B-O1) 10=Net-(E2A-E) 11=unconnected-(D1-Pad11) 12=Net-(D1-Pad12) 13=Net-(D1-Pad13) 14=Net-(D1-Pad14)
+D10     4116                     1=-5V 2=D7 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=DRA6 14=RDO7 15=~{DCAS} 16=GND
+D11     74LS161                  1=SOFT5 2=~{LDPS} 3=Net-(D11-D0) 4=Net-(D11-CEP) 5=Net-(D11-CEP) 6=GND 7=Net-(D11-CEP) 8=GND 9=Net-(D11-~{PE}) 10=Net-(D11-CEP) 11=V5 12=V4 13=V3 14=V2 15=Net-(D11-TC) 16=+5V
+D12     74LS161                  1=SOFT5 2=~{LDPS} 3=Net-(D11-D0) 4=GND 5=Net-(D12-CEP) 6=Net-(D11-D0) 7=Net-(D12-CEP) 8=GND 9=Net-(D11-~{PE}) 10=Net-(D12-CEP) 11=V1 12=V0 13=VC 14=VB 15=Net-(D11-CEP) 16=+5V
+D13     74LS161                  1=SOFT5 2=~{LDPS} 3=GND 4=GND 5=SOFT5 6=VA 7=Net-(D13-CEP) 8=GND 9=Net-(D13-Q2) 10=Net-(D13-CEP) 11=VA 12=Net-(D13-Q2) 13=H5 14=H4 15=Net-(D12-CEP) 16=+5V
+D14     74LS161                  1=SOFT5 2=~{LDPS} 3=GND 4=GND 5=GND 6=GND 7=SOFT5 8=GND 9=Net-(D13-Q2) 10=SOFT5 11=H3 12=H2 13=H1 14=H0 15=Net-(D13-CEP) 16=+5V
+D2      74LS20                   1=Net-(B2B-~-Pad6) 2=B1-1Q 3=- 4=Net-(A2A-~-Pad2) 5=PHI0 6=Net-(C2-P1) 7=GND 8=Net-(A2B-~-Pad5) 9=Net-(D1-Pad12) 10=Net-(D1-Pad13) 11=- 12=Net-(D1-Pad14) 13=~{KBD} 14=+5V
+D3      4116                     1=-5V 2=D0 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=DRA6 14=RDO0 15=~{DCAS} 16=GND
+D4      4116                     1=-5V 2=D1 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=DRA6 14=RDO1 15=~{DCAS} 16=GND
+D5      4116                     1=-5V 2=D2 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=DRA6 14=RDO2 15=~{DCAS} 16=GND
+D6      4116                     1=-5V 2=D3 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=DRA6 14=RDO3 15=~{DCAS} 16=GND
+D7      4116                     1=-5V 2=D4 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=DRA6 14=RDO4 15=~{DCAS} 16=GND
+D8      4116                     1=-5V 2=D5 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=DRA6 14=RDO5 15=~{DCAS} 16=GND
+D9      4116                     1=-5V 2=D6 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=DRA6 14=RDO6 15=~{DCAS} 16=GND
+E1      Memory Type Sel          1=Net-(E2A-O0) 2=Net-(E2A-O1) 3=Net-(E2A-O2) 4=Net-(E2A-O3) 5=Net-(E2B-O0) 6=Net-(E2B-O1) 7=Net-(E2B-O2) 8=MemSelE1 9=MemSelE1 10=MemSelE1 11=unconnected-(E1-Pad11) 12=ERA6 13=DRA6 14=CRA6
+E10     4116                     1=-5V 2=D7 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=ERA6 14=RDO7 15=~{ECAS} 16=GND
+E11     74LS153                  1=GND 2=AX 3=A7 4=V0 5=A10 6=Net-(C12-Za) 7=RA0 8=GND 9=RA3 10=Net-(C12-Zb) 11=A11 12=V1 13=A8 14=PHI0 15=GND 16=+5V
+E12     74LS153                  1=GND 2=AX 3=A2 4=H2 5=A4 6=Net-(E12-I0a) 7=RA1 8=GND 9=RA4 10=V2 11=A9 12=Net-(E12-I2b) 13=A3 14=PHI0 15=GND 16=+5V
+E13     74LS153                  1=GND 2=AX 3=A0 4=H0 5=A5 6=Net-(E13-I0a) 7=RA2 8=GND 9=RA5 10=Net-(E13-I0b) 11=A6 12=H1 13=A1 14=PHI0 15=GND 16=+5V
+E14     74LS283                  1=Net-(E12-I0a) 2=V4 3=H4 4=Net-(E12-I2b) 5=H3 6=SOFT5 7=V3 8=GND 9=unconnected-(E14-C4-Pad9) 10=Net-(E13-I0b) 11=V4 12=Net-(E14-A4) 13=Net-(E13-I0a) 14=V3 15=Net-(E14-A4) 16=+5V
+E2      74LS139                  1=Net-(E2A-E) 2=Net-(E2A-A0) 3=Net-(E2A-A1) 4=Net-(E2A-O0) 5=Net-(E2A-O1) 6=Net-(E2A-O2) 7=Net-(E2A-O3) 8=GND 9=unconnected-(E2B-O3-Pad9) 10=Net-(E2B-O2) 11=Net-(E2B-O1) 12=Net-(E2B-O0) 13=Net-(E2B-A1) 14=Net-(E2A-A0) 15=Net-(E2B-E) 16=+5V
+E3      4116                     1=-5V 2=D0 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=ERA6 14=RDO0 15=~{ECAS} 16=GND
+E4      4116                     1=-5V 2=D1 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=ERA6 14=RDO1 15=~{ECAS} 16=GND
+E5      4116                     1=-5V 2=D2 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=ERA6 14=RDO2 15=~{ECAS} 16=GND
+E6      4116                     1=-5V 2=D3 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=ERA6 14=RDO3 15=~{ECAS} 16=GND
+E7      4116                     1=-5V 2=D4 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=ERA6 14=RDO4 15=~{ECAS} 16=GND
+E8      4116                     1=-5V 2=D5 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=ERA6 14=RDO5 15=~{ECAS} 16=GND
+E9      4116                     1=-5V 2=D6 3=RRW 4=~{RAS} 5=RA5 6=RA4 7=RA3 8=+12V 9=+5V 10=RA0 11=RA1 12=RA2 13=ERA6 14=RDO6 15=~{ECAS} 16=GND
+F1      Memory Type Sel          1=~{CAS} 2=~{CAS} 3=~{CAS} 4=~{CAS} 5=~{CAS} 6=~{CAS} 7=~{CAS} 8=Net-(F2A-O2) 9=Net-(F2A-O1) 10=Net-(F2A-O0) 11=unconnected-(F1-Pad11) 12=~{ECAS} 13=~{DCAS} 14=~{CCAS}
+F12     74LS138                  1=A11 2=A12 3=A13 4=PHI1 5=PHI1 6=Net-(F12-E3) 7=ROM_Select_F8 8=GND 9=ROM_Select_F0 10=ROM_Select_E8 11=ROM_Select_E0 12=ROM_Select_D8 13=ROM_Select_D0 14=~{IO_STB} 15=~{C000-C7FF} 16=+5V
+F13     74LS138                  1=A4 2=A5 3=A6 4=A7 5=~{C000-C0FF} 6=PHI0 7=Net-(F13-O7) 8=GND 9=Net-(F13-O6) 10=Net-(F13-O5) 11=~{GamePort_Strobe} 12=SPKR_Out 13=Cassette_Out 14=~{CLR_STB} 15=~{KBD} 16=+5V
+F14     74LS259                  1=A1 2=A2 3=A3 4=SS-GR_~{TXT} 5=SS-Mix_~{NoMix} 6=SS-PG2_~{PG1} 7=SS-HI_~{LORES} 8=GND 9=GamePort_ANN0 10=GamePort_ANN1 11=GamePort_ANN2 12=GamePort_ANN3 13=A0 14=Net-(F13-O5) 15=SOFT5 16=+5V
+F2      74LS139                  1=~{CAS} 2=Net-(F2A-A0) 3=Net-(E2B-A1) 4=Net-(F2A-O0) 5=Net-(F2A-O1) 6=Net-(F2A-O2) 7=unconnected-(F2A-O3-Pad7) 8=GND 9=unconnected-(F2B-O3-Pad9) 10=Net-(F2B-O2) 11=Net-(F2B-O1) 12=Net-(E2A-E) 13=Net-(E2B-A1) 14=Net-(F2A-A0) 15=GND 16=+5V
+H1      74LS08                   1=Net-(F2B-O1) 2=Net-(F2B-O2) 3=Net-(C14A-~-Pad2) 4=A14 5=A15 6=Net-(F12-E3) 7=GND 8=Net-(J1-I0d) 9=SS-PG2_~{PG1} 10=HIRES 11=Net-(J1-I0b) 12=HIRES 13=VC 14=+5V
+H10     8T28                     1=Net-(H10-Driver_Ena) 2=D1 3=CPU_D1 4=D1 5=D5 6=CPU_D5 7=D5 8=GND 9=D6 10=CPU_D6 11=D6 12=D2 13=CPU_D2 14=D2 15=Net-(H10-Driver_Ena) 16=+5V
+H11     8T28                     1=Net-(H10-Driver_Ena) 2=D0 3=CPU_D0 4=D0 5=D4 6=CPU_D4 7=D4 8=GND 9=D7 10=CPU_D7 11=D7 12=D3 13=CPU_D3 14=D3 15=Net-(H10-Driver_Ena) 16=+5V
+H12     74LS138                  1=A8 2=A9 3=A10 4=~{C000-C7FF} 5=~{C000-C7FF} 6=Net-(H12-E3) 7=~{IO-SELECT-7} 8=GND 9=~{IO-SELECT-6} 10=~{IO-SELECT-5} 11=~{IO-SELECT-4} 12=~{IO-SELECT-3} 13=~{IO-SELECT-2} 14=~{IO-SELECT-1} 15=~{C000-C0FF} 16=+5V
+H13     NE558                    1=Net-(H13-OutA) 2=Net-(H13-TimingA) 3=Net-(F13-O7) 4=Net-(H13-Ctrl_Volt) 5=+5V 6=Net-(F13-O7) 7=Net-(H13-TimingB) 8=Net-(H13-OutB) 9=Net-(H13-OutC) 10=Net-(H13-TimingC) 11=Net-(F13-O7) 12=GND 13=+5V 14=Net-(F13-O7) 15=Net-(H13-TimingD) 16=Net-(H13-OutD)
+H14     74LS251                  1=Net-(H14-I3) 2=Net-(H14-I2) 3=Net-(H14-I1) 4=CASSETTE_IN 5=D7 6=unconnected-(H14-~{Y}-Pad6) 7=Net-(F13-O6) 8=GND 9=A2 10=A1 11=A0 12=Net-(H13-OutB) 13=Net-(H13-OutC) 14=Net-(H13-OutD) 15=Net-(H13-OutA) 16=+5V
+H2      74LS138                  1=A4 2=A5 3=A6 4=~{C000-C0FF} 5=PHI1 6=A7 7=~{DEV-SEL-7} 8=GND 9=~{DEV-SEL-6} 10=~{DEV-SEL-5} 11=~{DEV-SEL-4} 12=~{DEV-SEL-3} 13=~{DEV-SEL-2} 14=~{DEV-SEL-1} 15=~{DEV-SEL-0} 16=+5V
+H3      8T97                     1=Net-(H3-DIS1) 2=CPU_A9 3=A9 4=CPU_A8 5=A8 6=CPU_A7 7=A7 8=GND 9=A5 10=CPU_A5 11=A6 12=CPU_A6 13=unconnected-(H3-Y6-Pad13) 14=unconnected-(H3-I6-Pad14) 15=Net-(H3-DIS1) 16=+5V
+H4      8T97                     1=Net-(H3-DIS1) 2=CPU_A12 3=A12 4=CPU_A1 5=A1 6=CPU_A4 7=A4 8=GND 9=A10 10=CPU_A10 11=A11 12=CPU_A11 13=A15 14=CPU_A15 15=Net-(H3-DIS1) 16=+5V
+H5      8T97                     1=Net-(H3-DIS1) 2=CPU_A13 3=A13 4=CPU_RW 5=R~{W} 6=CPU_A2 7=A2 8=GND 9=A3 10=CPU_A3 11=A0 12=CPU_A0 13=A14 14=CPU_A14 15=Net-(H3-DIS1) 16=+5V
+J1      74LS257                  1=PHI0 2=C1-6 3=A13 4=Net-(E2A-A1) 5=Net-(J1-I0b) 6=A12 7=Net-(E2A-A0) 8=GND 9=Net-(F2A-A0) 10=A14 11=Net-(J1-I0d) 12=Net-(E2B-A1) 13=A15 14=GND 15=GND 16=+5V
+J13     74LS74                   1=SOFT5 2=Net-(J13A-D) 3=SPKR_Out 4=SOFT5 5=Net-(J13A-Q) 6=Net-(J13A-D) 7=GND 8=Net-(J13B-D) 9=Net-(J13B-Q) 10=SOFT5 11=Cassette_Out 12=Net-(J13B-D) 13=SOFT5 14=+5V
+ROM-D0  ROM_Chip                 1=A7 2=A6 3=A5 4=A4 5=A3 6=A2 7=A1 8=A0 9=D0 10=D1 11=D2 12=GND 13=D3 14=D4 15=D5 16=D6 17=D7 18=~{INH} 19=A10 20=ROM_Select_D0 21=ROM_Select_D0 22=A9 23=A8 24=+5V
+ROM-D8  ROM_Chip                 1=A7 2=A6 3=A5 4=A4 5=A3 6=A2 7=A1 8=A0 9=D0 10=D1 11=D2 12=GND 13=D3 14=D4 15=D5 16=D6 17=D7 18=~{INH} 19=A10 20=ROM_Select_D8 21=ROM_Select_D8 22=A9 23=A8 24=+5V
+ROM-E0  ROM_Chip                 1=A7 2=A6 3=A5 4=A4 5=A3 6=A2 7=A1 8=A0 9=D0 10=D1 11=D2 12=GND 13=D3 14=D4 15=D5 16=D6 17=D7 18=~{INH} 19=A10 20=ROM_Select_E0 21=ROM_Select_E0 22=A9 23=A8 24=+5V
+ROM-E8  ROM_Chip                 1=A7 2=A6 3=A5 4=A4 5=A3 6=A2 7=A1 8=A0 9=D0 10=D1 11=D2 12=GND 13=D3 14=D4 15=D5 16=D6 17=D7 18=~{INH} 19=A10 20=ROM_Select_E8 21=ROM_Select_E8 22=A9 23=A8 24=+5V
+ROM-F0  ROM_Chip                 1=A7 2=A6 3=A5 4=A4 5=A3 6=A2 7=A1 8=A0 9=D0 10=D1 11=D2 12=GND 13=D3 14=D4 15=D5 16=D6 17=D7 18=~{INH} 19=A10 20=ROM_Select_F0 21=ROM_Select_F0 22=A9 23=A8 24=+5V
+ROM-F8  ROM_Chip                 1=A7 2=A6 3=A5 4=A4 5=A3 6=A2 7=A1 8=A0 9=D0 10=D1 11=D2 12=GND 13=D3 14=D4 15=D5 16=D6 17=D7 18=~{INH} 19=A10 20=ROM_Select_F8 21=ROM_Select_F8 22=A9 23=A8 24=+5V
+SLOT0   50 pin slot              1=unconnected-(SLOT0-Pin_1-Pad1) 2=A0 3=A1 4=A2 5=A3 6=A4 7=A5 8=A6 9=A7 10=A8 11=A9 12=A10 13=A11 14=A12 15=A13 16=A14 17=A15 18=R~{W} 19=unconnected-(SLOT0-Pin_19-Pad19) 20=~{IO_STB} 21=RDY 22=~{DMA} 23=Net-(SLOT0-Pin_23) 24=Net-(SLOT0-Pin_24) 25=+5V 26=GND 27=unconnected-(SLOT0-Pin_27-Pad27) 28=unconnected-(SLOT0-Pin_28-Pad28) 29=~{NMI} 30=~{IRQ} 31=~{RESET} 32=~{INH} 33=-12V 34=-5V 35=unconnected-(SLOT0-Pin_35-Pad35) 36=7M 37=Q3 38=PHI1 39=USER-1 40=PHI0 41=~{DEV-SEL-0} 42=D7 43=D6 44=D5 45=D4 46=D3 47=D2 48=D1 49=D0 50=+12V
+SLOT1   50 pin slot              1=~{IO-SELECT-1} 2=A0 3=A1 4=A2 5=A3 6=A4 7=A5 8=A6 9=A7 10=A8 11=A9 12=A10 13=A11 14=A12 15=A13 16=A14 17=A15 18=R~{W} 19=unconnected-(SLOT1-Pin_19-Pad19) 20=~{IO_STB} 21=RDY 22=~{DMA} 23=Net-(SLOT1-Pin_23) 24=Net-(SLOT1-Pin_24) 25=+5V 26=GND 27=Net-(SLOT0-Pin_24) 28=Net-(SLOT0-Pin_23) 29=~{NMI} 30=~{IRQ} 31=~{RESET} 32=~{INH} 33=-12V 34=-5V 35=unconnected-(SLOT1-Pin_35-Pad35) 36=7M 37=Q3 38=PHI1 39=USER-1 40=PHI0 41=~{DEV-SEL-1} 42=D7 43=D6 44=D5 45=D4 46=D3 47=D2 48=D1 49=D0 50=+12V
+SLOT2   50 pin slot              1=~{IO-SELECT-2} 2=A0 3=A1 4=A2 5=A3 6=A4 7=A5 8=A6 9=A7 10=A8 11=A9 12=A10 13=A11 14=A12 15=A13 16=A14 17=A15 18=R~{W} 19=unconnected-(SLOT2-Pin_19-Pad19) 20=~{IO_STB} 21=RDY 22=~{DMA} 23=Net-(SLOT2-Pin_23) 24=Net-(SLOT2-Pin_24) 25=+5V 26=GND 27=Net-(SLOT1-Pin_24) 28=Net-(SLOT1-Pin_23) 29=~{NMI} 30=~{IRQ} 31=~{RESET} 32=~{INH} 33=-12V 34=-5V 35=unconnected-(SLOT2-Pin_35-Pad35) 36=7M 37=Q3 38=PHI1 39=USER-1 40=PHI0 41=~{DEV-SEL-2} 42=D7 43=D6 44=D5 45=D4 46=D3 47=D2 48=D1 49=D0 50=+12V
+SLOT3   50 pin slot              1=~{IO-SELECT-3} 2=A0 3=A1 4=A2 5=A3 6=A4 7=A5 8=A6 9=A7 10=A8 11=A9 12=A10 13=A11 14=A12 15=A13 16=A14 17=A15 18=R~{W} 19=unconnected-(SLOT3-Pin_19-Pad19) 20=~{IO_STB} 21=RDY 22=~{DMA} 23=INT-OUT-3 24=DMA-OUT-3 25=+5V 26=GND 27=Net-(SLOT2-Pin_24) 28=Net-(SLOT2-Pin_23) 29=~{NMI} 30=~{IRQ} 31=~{RESET} 32=~{INH} 33=-12V 34=-5V 35=unconnected-(SLOT3-Pin_35-Pad35) 36=7M 37=Q3 38=PHI1 39=USER-1 40=PHI0 41=~{DEV-SEL-3} 42=D7 43=D6 44=D5 45=D4 46=D3 47=D2 48=D1 49=D0 50=+12V
+SLOT4   50 pin slot              1=~{IO-SELECT-4} 2=A0 3=A1 4=A2 5=A3 6=A4 7=A5 8=A6 9=A7 10=A8 11=A9 12=A10 13=A11 14=A12 15=A13 16=A14 17=A15 18=R~{W} 19=unconnected-(SLOT4-Pin_19-Pad19) 20=~{IO_STB} 21=RDY 22=~{DMA} 23=Net-(SLOT4-Pin_23) 24=Net-(SLOT4-Pin_24) 25=+5V 26=unconnected-(SLOT4-Pin_26-Pad26) 27=DMA-OUT-3 28=INT-OUT-3 29=~{NMI} 30=~{IRQ} 31=~{RESET} 32=~{INH} 33=-12V 34=-5V 35=unconnected-(SLOT4-Pin_35-Pad35) 36=7M 37=Q3 38=PHI1 39=USER-1 40=PHI0 41=~{DEV-SEL-4} 42=D7 43=D6 44=D5 45=D4 46=D3 47=D2 48=D1 49=D0 50=+12V
+SLOT5   50 pin slot              1=~{IO-SELECT-5} 2=A0 3=A1 4=A2 5=A3 6=A4 7=A5 8=A6 9=A7 10=A8 11=A9 12=A10 13=A11 14=A12 15=A13 16=A14 17=A15 18=R~{W} 19=unconnected-(SLOT5-Pin_19-Pad19) 20=~{IO_STB} 21=RDY 22=~{DMA} 23=Net-(SLOT5-Pin_23) 24=Net-(SLOT5-Pin_24) 25=+5V 26=GND 27=Net-(SLOT4-Pin_24) 28=Net-(SLOT4-Pin_23) 29=~{NMI} 30=~{IRQ} 31=~{RESET} 32=~{INH} 33=-12V 34=-5V 35=unconnected-(SLOT5-Pin_35-Pad35) 36=7M 37=Q3 38=PHI1 39=USER-1 40=PHI0 41=~{DEV-SEL-5} 42=D7 43=D6 44=D5 45=D4 46=D3 47=D2 48=D1 49=D0 50=+12V
+SLOT6   50 pin slot              1=~{IO-SELECT-6} 2=A0 3=A1 4=A2 5=A3 6=A4 7=A5 8=A6 9=A7 10=A8 11=A9 12=A10 13=A11 14=A12 15=A13 16=A14 17=A15 18=R~{W} 19=unconnected-(SLOT6-Pin_19-Pad19) 20=~{IO_STB} 21=RDY 22=~{DMA} 23=Net-(SLOT6-Pin_23) 24=Net-(SLOT6-Pin_24) 25=+5V 26=GND 27=Net-(SLOT5-Pin_24) 28=Net-(SLOT5-Pin_23) 29=~{NMI} 30=~{IRQ} 31=~{RESET} 32=~{INH} 33=-12V 34=-5V 35=unconnected-(SLOT6-Pin_35-Pad35) 36=7M 37=Q3 38=PHI1 39=USER-1 40=PHI0 41=~{DEV-SEL-6} 42=D7 43=D6 44=D5 45=D4 46=D3 47=D2 48=D1 49=D0 50=+12V
+SLOT7   50 pin slot              1=~{IO-SELECT-7} 2=A0 3=A1 4=A2 5=A3 6=A4 7=A5 8=A6 9=A7 10=A8 11=A9 12=A10 13=A11 14=A12 15=A13 16=A14 17=A15 18=R~{W} 19=unconnected-(SLOT7-Pin_19-Pad19) 20=~{IO_STB} 21=RDY 22=~{DMA} 23=unconnected-(SLOT7-Pin_23-Pad23) 24=unconnected-(SLOT7-Pin_24-Pad24) 25=+5V 26=GND 27=Net-(SLOT6-Pin_24) 28=Net-(SLOT6-Pin_23) 29=~{NMI} 30=~{IRQ} 31=~{RESET} 32=~{INH} 33=-12V 34=-5V 35=unconnected-(SLOT7-Pin_35-Pad35) 36=7M 37=Q3 38=PHI1 39=USER-1 40=PHI0 41=~{DEV-SEL-7} 42=D7 43=D6 44=D5 45=D4 46=D3 47=D2 48=D1 49=D0 50=+12V
+U3      MOS6502                  1=GND 2=Net-(RA1D-R4.2) 3=Net-(U3-Phi1) 4=Net-(RA1C-R3.2) 5=unconnected-(U3-NC-Pad5) 6=Net-(RA1A-R1.2) 7=unconnected-(U3-SYNC-Pad7) 8=+5V 9=CPU_A0 10=CPU_A1 11=CPU_A2 12=CPU_A3 13=CPU_A4 14=CPU_A5 15=CPU_A6 16=CPU_A7 17=CPU_A8 18=CPU_A9 19=CPU_A10 20=CPU_A11 21=GND 22=CPU_A12 23=CPU_A13 24=CPU_A14 25=CPU_A15 26=CPU_D7 27=CPU_D6 28=CPU_D5 29=CPU_D4 30=CPU_D3 31=CPU_D2 32=CPU_D1 33=CPU_D0 34=CPU_RW 35=unconnected-(U3-N.C.-Pad35) 36=unconnected-(U3-N.C.-Pad36) 37=Net-(U3-Phi0) 38=GND 39=unconnected-(U3-Phi2-Pad39) 40=~{RESET}
+A7      Keyboard_Connector       1=+5V 2=Net-(A7-STROBE) 3=~{RESET} 4=unconnected-(A7-NC~{}-Pad4) 5=KBD_Data5 6=KBD_Data4 7=KBD_Data6 8=GND 9=unconnected-(A7-NC~{}-Pad9) 10=KBD_Data2 11=KBD_Data3 12=KBD_Data0 13=KBD_Data1 14=unconnected-(A7-NC~{}-Pad14) 15=-12V 16=unconnected-(A7-NC-Pad16)
+J14     GAME_IO_Conn             1=+5V 2=Net-(H14-I1) 3=Net-(H14-I2) 4=Net-(H14-I3) 5=~{GamePort_Strobe} 6=PDL0 7=PDL2 8=GND 9=unconnected-(J14-~-Pad9) 10=PDL1 11=PDL3 12=GamePort_ANN3 13=GamePort_ANN2 14=GamePort_ANN1 15=GamePort_ANN0 16=unconnected-(J14-~-Pad16)
+CP0     Power Connector          1=GND 2=GND 3=+5V 4=+12V 5=-12V 6=-5V
+J18     Aux Video                1=+12V 2=-5V 3=Net-(J18-Pin_3) 4=GND
+K14     VIDEO OUT                1=Net-(K14-In) 2=GND
+J0      Cassette Data In         S=GND T=Net-(Cap10-~-Pad1)
+J2      Cassette Data Out        S=Net-(J2-~-PadS) T=GND
+SPKR1   Speaker Connector        1=Net-(Cap12-~-Pad1) 2=+5V
+K13     MA741                    1=unconnected-(K13-NULL-Pad1) 2=Net-(K13--) 3=Net-(K13-+) 4=-5V 5=unconnected-(K13-NULL-Pad5) 6=Net-(K13-~) 7=+5V 8=unconnected-(K13-NC-Pad8)
+RA1     1K                       1=+5V 2=Net-(RA1A-R1.2) 3=~{DMA} 4=Net-(RA1C-R3.2) 5=Net-(RA1D-R4.2) 6=~{RESET} 7=~{INH} 8=Net-(H12-E3)
+RA2     1K                       1=+5V 2=unconnected-(RA2-R1-Pad2) 3=RA2 4=RA5 5=RA1 6=RA4 7=RA0 8=RA3
+RA3     1K                       1=GND 2=unconnected-(RA3-R1-Pad2) 3=RA2 4=RA5 5=RA1 6=RA4 7=RA0 8=RA3
+Q1      2N4258                   1=+5V 2=Net-(Q1-C) 3=Net-(Q1-E)
+Q2      2N4258                   1=Net-(Q2-B) 2=Net-(Q2-C) 3=Net-(Q1-E)
+Q3      2N3904                   1=Net-(J18-Pin_3) 2=Net-(Q3-C) 3=Color_Burst
+Q4      MPSA13                   1=GND 2=Net-(CR1-K) 3=Net-(Q4-C)
+Q5      2N3904                   1=~{RESET} 2=Net-(Q5-B) 3=GND
+Q6      2N3904                   1=GND 2=Net-(Q6-C) 3=Net-(Q6-B)
+R11     200R                     1=Net-(J18-Pin_3) 2=Net-(R10-~-Pad1) 3=GND
+CR1     1N914                    1=Net-(CR1-K) 2=GND
+CT3     5-50pf                   1=Net-(Q6-C) 2=GND
+Cap1    0.1uF                    1=+5V 2=GND
+Cap10   .1uF                     1=Net-(Cap10-~-Pad1) 2=Net-(Cap10-~-Pad2)
+Cap11   .1uF                     1=Net-(J13A-Q) 2=Net-(Cap11-~-Pad2)
+Cap12   .1uF                     1=Net-(Cap12-~-Pad1) 2=GND
+Cap13   0.1uf                    1=GND 2=-5V
+Cap14   0.1uf                    1=GND 2=+12V
+Cap2    47pf                     1=Net-(Q6-C) 2=GND
+Cap4    .1uF                     1=Net-(A15-THRES) 2=GND
+Cap5    .022uF                   1=Net-(H13-TimingD) 2=GND
+Cap6    .022uF                   1=Net-(H13-TimingC) 2=GND
+Cap7    .022uF                   1=Net-(H13-TimingB) 2=GND
+Cap8    .022uF                   1=Net-(H13-TimingA) 2=GND
+Cap9    .1uF                     1=Net-(H13-Ctrl_Volt) 2=GND
+JP-User1 Jumper                   1=USER-1 2=Net-(H12-E3)
+JP0     50Hz                     1=GND 2=Net-(D11-D0)
+JP10    50Hz                     1=V2 2=Net-(JP10-B)
+JP11    60Hz                     1=V1 2=Net-(JP10-B)
+JP12    60Hz                     1=Net-(JP12-A) 2=Net-(JP12-B)
+JP13    50Hz                     1=V5 2=Net-(JP12-B)
+L1      27uH                     1=Net-(Q6-C) 2=GND
+R1      330R                     1=+12V 2=Net-(Q1-E)
+R10     27R                      1=Net-(R10-~-Pad1) 2=Net-(K14-In)
+R12     12K                      1=Net-(B3-DISCH) 2=+5V
+R13     3M3                      1=Net-(B3-THRES) 2=Net-(B3-DISCH)
+R14     1K                       1=Net-(A15-OUT) 2=Net-(Q5-B)
+R15     1M                       1=Net-(K13-+) 2=Net-(K13-~)
+R16     12K                      1=GND 2=Net-(K13-+)
+R17     12K                      1=GND 2=Net-(K13--)
+R18     100R                     1=GND 2=Net-(J2-~-PadS)
+R19     12K                      1=Net-(J2-~-PadS) 2=Net-(J13B-Q)
+R2      47R                      1=Net-(Q1-C) 2=GND
+R20     100R                     1=PDL0 2=Net-(H13-TimingA)
+R21     100R                     1=PDL1 2=Net-(H13-TimingD)
+R22     100R                     1=PDL2 2=Net-(H13-TimingC)
+R23     100R                     1=PDL3 2=Net-(H13-TimingB)
+R24     47K                      1=Net-(CR1-K) 2=Net-(Cap11-~-Pad2)
+R25     27R                      1=Net-(Cap12-~-Pad1) 2=Net-(Q4-C)
+R26     2M2                      1=+5V 2=Net-(A15-THRES)
+R27     4K7                      1=Net-(Q6-B) 2=SS-GR_~{TXT}
+R29     12K                      1=Net-(K13-~) 2=CASSETTE_IN
+R3      150R                     1=Net-(Q2-C) 2=GND
+R30     12K                      1=Net-(K13--) 2=Net-(Cap10-~-Pad2)
+R4      47R                      1=+5V 2=Net-(Q2-B)
+R5      1K                       1=Net-(B12A-~-Pad12) 2=Net-(Q6-C)
+R6      2K7                      1=Net-(Q6-B) 2=Color_Burst
+R7      1K5                      1=Color_Burst 2=VIDEO_DATA
+R8      2K                       1=Color_Burst 2=SYNC
+R9      10R                      1=+5V 2=Net-(Q3-C)
+RA22    1K                       1=Net-(D11-D0) 2=+5V
+Y1      XT0001                   1=Net-(Q1-C) 2=Net-(Q2-B)
+TP1     Wire wrap post           1=Net-(R10-~-Pad1)

@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>qtx-hw-sim</title>
+<style>
+  :root { color-scheme: dark; }
+  html, body { margin: 0; height: 100%; background: #0d110f; color: #dfe6dc;
+    font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; overflow: hidden; }
+  .app { display: flex; height: 100vh; }
+  .left { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  canvas.board { display: block; cursor: crosshair; }
+  .info { height: 28px; line-height: 28px; padding: 0 10px; background: #151b17; color: #b8c4b8;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-top: 1px solid #243028; }
+  .right { width: 470px; flex: none; padding: 8px 10px; box-sizing: border-box; overflow-y: auto;
+    background: #121714; border-left: 1px solid #243028; }
+  .bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 6px 0; }
+  button, select, input[type=file] { background: #1f2a23; color: #e4ece2; border: 1px solid #3a4a3f;
+    border-radius: 4px; padding: 4px 9px; font: inherit; cursor: pointer; }
+  button:hover, select:hover { background: #2a3a30; }
+  button.small { padding: 1px 6px; font-size: 11px; margin-left: 8px; }
+  .monwrap { background: #000; border-radius: 6px; padding: 4px; margin: 6px 0; }
+  canvas.monitor { display: block; width: 100%; image-rendering: pixelated; outline: none; border-radius: 3px; }
+  canvas.monitor:focus { box-shadow: 0 0 0 2px #5aff78; }
+  canvas.scope { display: block; width: 100%; border-radius: 4px; }
+  .keypad { grid-template-columns: repeat(5, 1fr); gap: 5px; margin: 6px 0; }
+  .keypad button { height: 36px; font-weight: 700; background: #1b1b1b; border-color: #444; user-select: none; }
+  .keypad button:active { background: #3a3a3a; }
+  .keypad button.red { background: #5c1a1a; border-color: #8a2a2a; }
+  .speed, .cpu { font: 12px ui-monospace, Consolas, monospace; color: #9fb09f; margin: 2px 0; }
+  .lbl { color: #9fb09f; font-weight: 600; margin-top: 8px; }
+  .status { margin: 6px 0; color: #ffd27a; min-height: 1.2em; }
+  .faults { font: 12px ui-monospace, Consolas, monospace; }
+  .fault { color: #ff9600; padding: 2px 0; }
+  .nofault { color: #6c8a6c; }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 4px; }
+  .leg { display: inline-flex; align-items: center; gap: 4px; }
+  .sw { width: 11px; height: 11px; display: inline-block; border-radius: 2px; }
+  .help { color: #7f907f; font-size: 12px; margin-top: 6px; }
+  .menu { position: absolute; z-index: 10; background: #1a221d; border: 1px solid #45604d;
+    border-radius: 6px; padding: 4px; box-shadow: 0 6px 18px rgba(0,0,0,.5); min-width: 190px; }
+  .mtitle { padding: 4px 8px; color: #9fd0a8; font-weight: 600; border-bottom: 1px solid #2c3a31; margin-bottom: 3px; }
+  .mitem { display: block; width: 100%; text-align: left; border: 0; background: transparent; padding: 5px 8px; }
+  .mitem:hover { background: #2f4236; }
+  @media (max-width: 900px) {
+    .app { flex-direction: column; }
+    .right { width: 100%; height: 50vh; border-left: 0; border-top: 1px solid #243028; }
+  }
+</style>
+<script src="index.js" type="text/javascript" defer="true"></script>
+</head>
+<body onload="main();">
+</body>
+</html>
